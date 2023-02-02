@@ -9,13 +9,50 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(alignment: .center, spacing: 20) {
+            Text("Bienvenidos al curso de Swift UI")
+                .font(.largeTitle)
+                .foregroundColor(Color.blue)
+                .background(Color.gray)
+            Spacer()
+            ZStack {
+                Text("")
+                    .frame(maxWidth: .infinity,
+                        maxHeight:
+                        .infinity)
+                    .background(Color.gray).padding()
+                Text("")
+                    .frame(maxWidth: .infinity,
+                        maxHeight:
+                        .infinity)
+                    .background(Color.red).padding(40)
+                Text("")
+                    .frame(maxWidth: .infinity,
+                        maxHeight:
+                        .infinity)
+                    .background(Color.blue).padding(60)
+                Text("")
+                    .frame(maxWidth: .infinity,
+                        maxHeight:
+                        .infinity)
+                    .background(Color.green).padding(80)
+                
+            }
+            Spacer()
+            HStack {
+                Text("Hello RWD!")
+                    .foregroundColor( Color.red)
+                .padding()
+                .background(Color.gray)
+                Spacer()
+                Text("Bienvenidos a RWD!")
+                    .foregroundColor( Color.red)
+                .padding()
+                .background(Color.gray)
+                
+            }
         }
-        .padding()
+        .background(Color.yellow)
     }
 }
 
