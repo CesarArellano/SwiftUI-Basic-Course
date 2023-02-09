@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE15E35A2994A4D80024B75B /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE15E3592994A4D80024B75B /* ImageView.swift */; };
+		FE15E35C2994A89E0024B75B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE15E35B2994A89E0024B75B /* MapView.swift */; };
+		FE15E35E2994AB4B0024B75B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE15E35D2994AB4B0024B75B /* MainView.swift */; };
+		FE15E3622994ADCD0024B75B /* Programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE15E3612994ADCD0024B75B /* Programmer.swift */; };
+		FE15E3642994AE280024B75B /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE15E3632994AE280024B75B /* RowView.swift */; };
+		FE15E3662994AF930024B75B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE15E3652994AF930024B75B /* ListView.swift */; };
+		FE15E3682994B1020024B75B /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE15E3672994B1020024B75B /* ListDetailView.swift */; };
 		FE694D80298B8E24002728A0 /* SwiftUITutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE694D7F298B8E24002728A0 /* SwiftUITutorialApp.swift */; };
 		FE694D82298B8E24002728A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE694D81298B8E24002728A0 /* ContentView.swift */; };
 		FE694D84298B8E26002728A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE694D83298B8E26002728A0 /* Assets.xcassets */; };
-		FE694D87298B8E26002728A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE694D86298B8E26002728A0 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE15E3592994A4D80024B75B /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		FE15E35B2994A89E0024B75B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FE15E35D2994AB4B0024B75B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FE15E3612994ADCD0024B75B /* Programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmer.swift; sourceTree = "<group>"; };
+		FE15E3632994AE280024B75B /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		FE15E3652994AF930024B75B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		FE15E3672994B1020024B75B /* ListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailView.swift; sourceTree = "<group>"; };
 		FE694D7C298B8E24002728A0 /* SwiftUITutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE694D7F298B8E24002728A0 /* SwiftUITutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITutorialApp.swift; sourceTree = "<group>"; };
 		FE694D81298B8E24002728A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE694D83298B8E26002728A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FE694D86298B8E26002728A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE15E35F2994AD890024B75B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE694D81298B8E24002728A0 /* ContentView.swift */,
+				FE15E3592994A4D80024B75B /* ImageView.swift */,
+				FE15E35B2994A89E0024B75B /* MapView.swift */,
+				FE15E35D2994AB4B0024B75B /* MainView.swift */,
+				FE15E3632994AE280024B75B /* RowView.swift */,
+				FE15E3652994AF930024B75B /* ListView.swift */,
+				FE15E3672994B1020024B75B /* ListDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FE15E3602994ADB70024B75B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FE15E3612994ADCD0024B75B /* Programmer.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		FE694D73298B8E24002728A0 = {
 			isa = PBXGroup;
 			children = (
@@ -52,19 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				FE694D7F298B8E24002728A0 /* SwiftUITutorialApp.swift */,
-				FE694D81298B8E24002728A0 /* ContentView.swift */,
+				FE15E3602994ADB70024B75B /* Data */,
+				FE15E35F2994AD890024B75B /* Views */,
 				FE694D83298B8E26002728A0 /* Assets.xcassets */,
-				FE694D85298B8E26002728A0 /* Preview Content */,
 			);
 			path = SwiftUITutorial;
-			sourceTree = "<group>";
-		};
-		FE694D85298B8E26002728A0 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				FE694D86298B8E26002728A0 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE694D87298B8E26002728A0 /* Preview Assets.xcassets in Resources */,
 				FE694D84298B8E26002728A0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +162,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE15E3662994AF930024B75B /* ListView.swift in Sources */,
+				FE15E35A2994A4D80024B75B /* ImageView.swift in Sources */,
+				FE15E3622994ADCD0024B75B /* Programmer.swift in Sources */,
+				FE15E3642994AE280024B75B /* RowView.swift in Sources */,
+				FE15E35C2994A89E0024B75B /* MapView.swift in Sources */,
 				FE694D82298B8E24002728A0 /* ContentView.swift in Sources */,
+				FE15E3682994B1020024B75B /* ListDetailView.swift in Sources */,
+				FE15E35E2994AB4B0024B75B /* MainView.swift in Sources */,
 				FE694D80298B8E24002728A0 /* SwiftUITutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
