@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(alignment: .center, spacing: 20) {
+        VStack(spacing: 20) {
             Text("Bienvenidos al curso de Swift UI")
                 .font(.largeTitle)
                 .foregroundColor(Color.blue)
@@ -39,7 +39,7 @@ struct ContentView: View {
                 
             }
             Spacer()
-            HStack {
+            HStack{
                 Text("Hello RWD!")
                     .foregroundColor( Color.red)
                 .padding()
@@ -50,6 +50,22 @@ struct ContentView: View {
                 .padding()
                 .background(Color.gray)
                 
+            }
+            VStack() {
+                Text("1")
+                Text("2")
+                Text("3")
+                Text("4")
+                Text("5")
+                Text("6")
+                Text("7")
+                Text("8")
+                Text("9")
+                VStack() {
+                    Text("10")
+                    Text("11")
+                    Text("12")
+                }
             }
         }
         .background(Color.yellow)
