@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ListDetailView: View {
     var programmer: Programmer
+    @Binding var favorite: Bool
     
     var body: some View {
         VStack {
@@ -20,7 +21,23 @@ struct ListDetailView: View {
                     Color.blue,
                     lineWidth: 5
                 ))
-            Text(programmer.name).font(.largeTitle)
+                .foregroundColor(.blue)
+            HStack {
+                Text(programmer.name)
+                    .font(.largeTitle)
+                Button {
+                    favorite.toggle()
+                } label: {
+                    if favorite {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.yellow)
+                    } else {
+                        Image(systemName: "star")
+                            .foregroundColor(.yellow)
+                    }
+                    
+                }
+            }
             Text(programmer.languages).font(.title)
             Spacer()
         }
@@ -36,8 +53,10 @@ struct ListDetailView_Previews: PreviewProvider {
                 languages: "Swift & Dart",
                 avatar: Image(
                     systemName: "person.fill"
-                )
-            )
+                ),
+                favorite: true
+            ),
+            favorite: .constant(false)
         )
     }
 }

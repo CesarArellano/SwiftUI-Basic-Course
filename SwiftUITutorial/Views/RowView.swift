@@ -24,6 +24,13 @@ struct RowView: View {
                 Text(programmer.languages)
                     .font(.subheadline)
             }
+            Spacer()
+            if programmer.favorite {
+                Image(
+                    systemName: "star.fill"
+                )
+                .foregroundColor(.yellow)
+            }
                 
         }
     }
